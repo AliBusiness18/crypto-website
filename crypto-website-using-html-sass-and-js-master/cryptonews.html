@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto News</title>
+</head>
+<body>
+    
+    <section class="section">
+
+        <div class="cryptonews">
+            <h1>Market news</h1>
+            <h4>Don't miss a beat with global real-time updates.</h4>
+        </div>
+        <style>
+            .section{
+                background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .cryptonews{
+                max-width: 780px;
+                margin-right: auto;
+                margin-left: auto;
+                padding-top: 70px;
+                padding-bottom: 70px;
+                align-items: center;
+            }
+            .cryptonews h1{
+                font-size: 80px;
+                font-weight: 900;
+                margin-bottom: 10px;
+                justify-content: center;
+                color: #fff;
+            }
+            .cryptonews h4{
+                font-size: 20px;
+                margin-bottom: 20px;
+                transform: translateX(20px);
+                color: #fff;
+            }
+    
+        </style>
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container"></div>
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+        <style>
+            .tradingview-widget-copyright a span{
+                color: #b982ff;
+            }
+        </style>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+        {
+        "width": 1000,
+        "height": 490,
+        "defaultColumn": "overview",
+        "screener_type": "crypto_mkt",
+        "displayCurrency": "USD",
+        "colorTheme": "light",
+        "locale": "en"
+      }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+    </section>
+
+    <script src="cryptonews.js"></script>
+    
+
+</body>
+</html>
